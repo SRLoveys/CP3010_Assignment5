@@ -23,6 +23,6 @@ export async function connectToDb() {
     cachedClient = client;
     cachedDb = client.db('rickmorty');
 
-    return { client, db: client.db() };
+    return { client, db: cachedDb };
 }
  
